@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hasbi Belajar - TKA Matematika SD</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-blobs"></div>
+
+  <main class="page">
+    <header class="topbar">
+      <div class="brand">
+        <h1 class="brand-title">
+          <span class="hasbi">Hasbi</span>
+          <span class="belajar">Belajar</span>
+        </h1>
+        <p class="brand-subtitle">Latihan TKA Matematika SD • 10 soal acak setiap refresh</p>
+      </div>
+    </header>
+
+    <section class="hero">
+      <img src="hasbibelajar.jpg" alt="Banner Hasbi Belajar" class="hero-image" />
+    </section>
+
+    <section class="quiz-card">
+      <div class="quiz-head">
+        <div>
+          <h2>Soal Cerita Pilihan Ganda</h2>
+          <p>Pilih jawaban yang menurut kamu paling tepat. Skor akan muncul setelah semua soal dijawab.</p>
+        </div>
+        <button id="newQuizBtn" class="ghost-btn" type="button">Acak Soal</button>
+      </div>
+
+      <div id="quiz" class="quiz-list"></div>
+
+      <div class="submit-row">
+        <button id="submitBtn" class="submit-btn" type="button" disabled>Kirim</button>
+      </div>
+
+      <div id="result" class="result hidden" aria-live="polite"></div>
+    </section>
+
+    <footer class="footer">
+      <span>Hasbi Belajar</span>
+      <span>•</span>
+      <span>Matematika SD</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+  <!-- Overlay (background blur) -->
+<div id="overlay" class="overlay hidden"></div>
+
+<!-- Popup hasil -->
+<div id="popup" class="popup hidden">
+  <h2>Hasil Ulangan</h2>
+
+  <div id="resultText"></div>
+
+  <button id="newQuizBtn">ULANGI ULANGAN</button>
+</div>
+</body>
+</html>
